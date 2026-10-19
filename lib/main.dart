@@ -1,7 +1,15 @@
+import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:http/http.dart' as http;
-
+void main() {
+  // هنا تبدأ تشغيل التطبيق أو الواجهة الخاصة بك
+  runApp(const MaterialApp(
+    home: Scaffold(
+      body: Center(child: Text('Hammer Downloader')),
+    ),
+  ));
+}
 /// نموذج يمثل حالة وحجم التحميل
 class DownloadProgress {
   final int downloadedBytes;
